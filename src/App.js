@@ -23,24 +23,24 @@ function App() {
       });
   }, []);
 
-
   return (
     <div className="App container">
       <h1 className="mt-3 mb-3"> <FontAwesomeIcon icon={faShop} /> Produtos Fakestore</h1>
       <Menu/>
       <br></br>
 
-      {/* <Categoria/> */}
+      {/* <Categoria /> */}
+      {/* categoria={produto.category}  */}
       
       {produtos.map((produto) => {
           return <Card 
             titulo={produto.title} 
             id={produto.id} 
             descricao ={produto.description} 
-            /* categoria={produto.category} */
             imagem = {produto.image}
           />
         })}
+
       
     </div>
   );
